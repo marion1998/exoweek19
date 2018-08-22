@@ -1,0 +1,15 @@
+{
+    "name": "zurcher/exoweek19",
+    "require": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "authors": [
+        {
+            "name": "marion1998",
+            "email": "marion281098@outlook.fr"
+        }
+    ],
+    "scripts": {
+        "test": "./vendor/bin/phpunit ./Test.php"
+    }
+}
