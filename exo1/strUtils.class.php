@@ -12,7 +12,7 @@
             $this->str = $hey;
         }
 
-        public function italic(){
+        public function italic(){   
             $this->str = "<i>" . $this->str . "</i>";
                 }
         
