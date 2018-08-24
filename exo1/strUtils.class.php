@@ -2,28 +2,37 @@
     class StrUtils {
         private $str;
         public function __construct($string) {
-            $this->str = $string;
+            $this->setStr($string);
+        }
+        public function getStr(){
+            return $this->str;
+        }
+
+        public function setStr($hey){
+            $this->str = $hey;
         }
 
         public function italic(){
-            return "<h4> Italic : </h4> <i>" . $this->str . "</i> <hr>";
+            $this->str = "<i>" . $this->str . "</i>";
                 }
         
         public function bold(){
-            return "<h4> Bold : </h4>  <b>" . $this->str . "</b> <hr>";
+            $this->str = "<b>" . $this->str . "</b>";
         }
 
         public function underline(){
-            return "<h4> Underline : </h4> <u>" . $this->str . "</u> <hr>";
+            $this->str = "<u>" . $this->str . "</u> ";
         }
 
         public function capitalize(){
-            return "<h4> Capitalize : </h4> <>" . $this->str . "</> <hr>";
+            $this->str = strtoupper($this->getStr());
+        }
+
+        public function uglify(){
+            $this->italic();
+            $this->bold();
+            $this->underline();
         }
     }
-
-    // $myStr = new StrUtils('hello');
-
-
 
 ?>

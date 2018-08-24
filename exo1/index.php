@@ -15,11 +15,34 @@
     $myStr = new StrUtils('php is awesome !');
     ?>
 
-<?php  echo $myStr->italic();?>
+<?php  $myStr->italic();
+       echo "Italic : <br>" . $myStr->getStr() . "<hr>";
+?>
 
-<?php echo $myStr->bold();?>
+<?php  
+        $myStr = new StrUtils('php is awesome !');
+        $myStr->bold();
+        echo "Bold : <br>" . $myStr->getStr() . "<hr>";
+?>
 
-<?php echo $myStr->underline();?>
+<?php  
+        $myStr = new StrUtils('php is awesome !');
+        $myStr->underline();
+        echo "Underline : <br>" . $myStr->getStr() . "<hr>";
+?>
+
+<?php
+        $myStr = new StrUtils('php is awesome !');
+        $myStr->capitalize();
+        echo "Capitalize : <br>" . $myStr->getStr() . "<hr>";
+?>
+
+<?php
+        $myStr = new StrUtils('php is awesome');
+        $myStr->uglify();
+        echo "Uglify : <br>" . $myStr->getStr() . "<hr>";
+?>
+
     
 </body>
 </html>
